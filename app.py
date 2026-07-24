@@ -1,3 +1,5 @@
+import os
+
 import pandas as pd
 import plotly.express as px
 import streamlit as st
@@ -11,12 +13,13 @@ st.set_page_config(
     layout="wide",
 )
 
+CSV_PATH = "energia_renovable.csv"
+
 # ------------------------------------------------------------------
 # Carga de datos
 # ------------------------------------------------------------------
 @st.cache_data
-def cargar_datos():
-    df = pd.read_csv("energia_renovable.csv")
+def procesar_datos(df):
     df["Fecha_Entrada_Operacion"] = pd.to_datetime(
         df["Fecha_Entrada_Operacion"], errors="coerce"
     )
@@ -24,7 +27,17 @@ def cargar_datos():
     df["Año_Entrada"] = df["Fecha_Entrada_Operacion"].dt.year
     return df
 
-df = cargar_datos()
+if os.path.exists(CSV_PATH):
+    df = procesar_datos(pd.read_csv(CSV_PATH))
+else:
+    st.warning(
+        f"No se encontró **{CSV_PATH}** en el repositorio. "
+        "Súbelo aquí para continuar (o agrégalo al repo de GitHub junto a app.py)."
+    )
+    archivo_subido = st.file_uploader("Sube el archivo CSV", type=["csv"])
+    if archivo_subido is None:
+        st.stop()
+    df = procesar_datos(pd.read_csv(archivo_subido))
 
 # ------------------------------------------------------------------
 # Sidebar - Filtros
@@ -87,52 +100,75 @@ st.divider()
 # ------------------------------------------------------------------
 st.subheader("💰 Inversión vs. Generación Diaria por Tecnología")
 
-col_izq, col_der = st.columns([2, 1])
+# Resumen agregado por tecnología (base de ambos gráficos)
+resumen_eficiencia = (
+    df_filtrado.groupby("Tecnologia")
+    .agg(
+        Inversion_Total_MUSD=("Inversion_Inicial_MUSD", "sum"),
+        Generacion_Total_MWh=("Generacion_Diaria_MWh", "sum"),
+        Inversion_Promedio_MUSD=("Inversion_Inicial_MUSD", "mean"),
+        Generacion_Promedio_MWh=("Generacion_Diaria_MWh", "mean"),
+        Proyectos=("ID_Proyecto", "count"),
+    )
+    .reset_index()
+)
+resumen_eficiencia["MUSD_por_MWh_dia"] = (
+    resumen_eficiencia["Inversion_Total_MUSD"] / resumen_eficiencia["Generacion_Total_MWh"]
+)
+resumen_eficiencia = resumen_eficiencia.sort_values("MUSD_por_MWh_dia", ascending=True)
+mejor_tec = resumen_eficiencia.iloc[0]["Tecnologia"]
+
+col_izq, col_der = st.columns(2)
 
 with col_izq:
-    fig_scatter = px.scatter(
-        df_filtrado,
-        x="Inversion_Inicial_MUSD",
-        y="Generacion_Diaria_MWh",
-        color="Tecnologia",
-        size="Capacidad_Instalada_MW",
-        hover_data=["ID_Proyecto", "Operador", "Estado_Actual"],
-        title="Inversión vs. Generación Diaria por Proyecto",
-        labels={
-            "Inversion_Inicial_MUSD": "Inversión Inicial (MUSD)",
-            "Generacion_Diaria_MWh": "Generación Diaria (MWh)",
-        },
+    # Barra horizontal: responde el ranking directo (menor = mejor)
+    resumen_eficiencia["Destacado"] = resumen_eficiencia["Tecnologia"].apply(
+        lambda t: "Mejor opción" if t == mejor_tec else "Otras"
     )
-    st.plotly_chart(fig_scatter, use_container_width=True)
+    fig_ranking = px.bar(
+        resumen_eficiencia.sort_values("MUSD_por_MWh_dia", ascending=True),
+        x="MUSD_por_MWh_dia",
+        y="Tecnologia",
+        orientation="h",
+        color="Destacado",
+        color_discrete_map={"Mejor opción": "#2ecc71", "Otras": "#bdc3c7"},
+        text_auto=".3f",
+        title="Ranking: Inversión requerida por cada MWh diario (menor = mejor)",
+        labels={"MUSD_por_MWh_dia": "MUSD por MWh diario", "Tecnologia": ""},
+    )
+    fig_ranking.update_layout(showlegend=False, yaxis={"categoryorder": "total descending"})
+    st.plotly_chart(fig_ranking, use_container_width=True)
 
 with col_der:
-    resumen_eficiencia = (
-        df_filtrado.groupby("Tecnologia")
-        .agg(
-            Inversion_Total_MUSD=("Inversion_Inicial_MUSD", "sum"),
-            Generacion_Total_MWh=("Generacion_Diaria_MWh", "sum"),
-        )
-        .reset_index()
-    )
-    resumen_eficiencia["MUSD_por_MWh_dia"] = (
-        resumen_eficiencia["Inversion_Total_MUSD"] / resumen_eficiencia["Generacion_Total_MWh"]
-    )
-    resumen_eficiencia = resumen_eficiencia.sort_values("MUSD_por_MWh_dia")
-
-    fig_barras_ef = px.bar(
+    # Frontera de eficiencia: promedio de inversión vs. generación por tecnología
+    fig_frontera = px.scatter(
         resumen_eficiencia,
-        x="Tecnologia",
-        y="MUSD_por_MWh_dia",
+        x="Inversion_Promedio_MUSD",
+        y="Generacion_Promedio_MWh",
         color="Tecnologia",
-        text_auto=".2f",
-        title="MUSD por MWh diario (menor = mejor)",
-        labels={"MUSD_por_MWh_dia": "MUSD / MWh día"},
+        text="Tecnologia",
+        size="Proyectos",
+        size_max=40,
+        title="Promedio por Tecnología: menos Inversión y más Generación = mejor",
+        labels={
+            "Inversion_Promedio_MUSD": "Inversión Promedio (MUSD)",
+            "Generacion_Promedio_MWh": "Generación Promedio Diaria (MWh)",
+        },
     )
-    fig_barras_ef.update_layout(showlegend=False)
-    st.plotly_chart(fig_barras_ef, use_container_width=True)
+    fig_frontera.update_traces(textposition="top center")
+    fig_frontera.add_annotation(
+        text="⭐ Zona ideal: arriba-izquierda",
+        xref="paper", yref="paper", x=0.02, y=0.98,
+        showarrow=False, font=dict(size=11, color="gray"),
+    )
+    fig_frontera.update_layout(showlegend=False)
+    st.plotly_chart(fig_frontera, use_container_width=True)
 
-    mejor_tec = resumen_eficiencia.iloc[0]["Tecnologia"]
-    st.success(f"✅ **{mejor_tec}** tiene la mejor relación Inversión / Generación Diaria.")
+st.success(
+    f"✅ **{mejor_tec}** tiene la mejor relación Inversión / Generación Diaria: requiere "
+    f"solo **{resumen_eficiencia.iloc[0]['MUSD_por_MWh_dia']:.3f} MUSD** por cada MWh generado al día "
+    f"(el valor más bajo entre las tecnologías comparadas)."
+)
 
 st.divider()
 
@@ -145,19 +181,21 @@ capacidad_operador = (
     df_filtrado.groupby("Operador")["Capacidad_Instalada_MW"]
     .sum()
     .reset_index()
-    .sort_values("Capacidad_Instalada_MW", ascending=False)
+    .sort_values("Capacidad_Instalada_MW", ascending=True)
 )
 
 fig_operador = px.bar(
     capacidad_operador,
-    x="Operador",
-    y="Capacidad_Instalada_MW",
-    color="Operador",
+    x="Capacidad_Instalada_MW",
+    y="Operador",
+    orientation="h",
+    color="Capacidad_Instalada_MW",
+    color_continuous_scale="Greens",
     text_auto=".0f",
     title="Capacidad Instalada Total por Operador (MW)",
-    labels={"Capacidad_Instalada_MW": "Capacidad Instalada (MW)"},
+    labels={"Capacidad_Instalada_MW": "Capacidad Instalada (MW)", "Operador": ""},
 )
-fig_operador.update_layout(showlegend=False)
+fig_operador.update_layout(showlegend=False, coloraxis_showscale=False)
 st.plotly_chart(fig_operador, use_container_width=True)
 
 st.divider()
