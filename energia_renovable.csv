@@ -1,0 +1,501 @@
+ID_Proyecto,Tecnologia,Operador,Capacidad_Instalada_MW,Generacion_Diaria_MWh,Eficiencia_Planta_Pct,Conectado_SIN,Estado_Actual,Inversion_Inicial_MUSD,Fecha_Entrada_Operacion
+PLANT_000,Pequeña Hidroeléctrica (PCH),AES,151.98,242.91,88.0,True,Mantenimiento,46.7,2021-09-07
+PLANT_001,Eólica Onshore,AES,193.57,1109.55,60.8,True,Mantenimiento,7.14,2022-08-01
+PLANT_002,Solar Fotovoltaica,Celsia,88.23,547.11,29.5,True,Pruebas,19.72,2020-02-10
+PLANT_003,Solar Fotovoltaica,Isagen,56.03,1010.19,36.5,True,En Construcción,2.38,2022-09-24
+PLANT_004,Pequeña Hidroeléctrica (PCH),EPM,159.76,413.26,30.9,True,En Construcción,42.9,2024-06-21
+PLANT_005,Biomasa,AES,65.59,131.03,34.7,True,Pruebas,18.58,2020-06-24
+PLANT_006,Eólica Onshore,Empresa Privada Local,60.23,1488.95,39.5,True,Operación Comercial,31.92,2022-10-03
+PLANT_007,Eólica Onshore,AES,46.88,242.74,59.4,True,En Construcción,36.03,2022-02-16
+PLANT_008,Solar Fotovoltaica,Isagen,26.37,1482.75,62.0,True,En Planeación,22.06,2021-12-15
+PLANT_009,Solar Fotovoltaica,Empresa Privada Local,51.66,1466.15,49.1,True,Pruebas,16.02,2023-10-11
+PLANT_010,Biomasa,Celsia,71.39,1192.79,64.2,False,En Construcción,48.15,2024-08-13
+PLANT_011,Biomasa,EPM,134.96,992.54,21.5,True,Operación Comercial,48.26,2021-08-17
+PLANT_012,Biomasa,Celsia,12.98,870.93,22.0,False,En Construcción,15.18,2021-09-16
+PLANT_013,Pequeña Hidroeléctrica (PCH),Celsia,42.5,1300.49,28.7,True,Mantenimiento,24.5,2023-11-20
+PLANT_014,Solar Fotovoltaica,EPM,161.9,441.26,56.4,True,En Planeación,48.67,2024-07-19
+PLANT_015,Pequeña Hidroeléctrica (PCH),EPM,29.81,706.85,32.1,True,Pruebas,1.24,2020-03-23
+PLANT_016,Solar Fotovoltaica,AES,68.86,932.89,37.7,True,Mantenimiento,21.22,2020-07-13
+PLANT_017,Solar Fotovoltaica,AES,173.0,622.67,47.0,True,Operación Comercial,5.92,2024-05-23
+PLANT_018,Eólica Onshore,EPM,31.41,646.95,79.9,True,Mantenimiento,25.95,2023-09-04
+PLANT_019,Solar Fotovoltaica,Empresa Privada Local,17.01,502.12,16.1,True,Mantenimiento,2.21,2022-09-09
+PLANT_020,Solar Fotovoltaica,Enel,97.17,850.71,67.0,True,Operación Comercial,20.94,2023-05-28
+PLANT_021,Pequeña Hidroeléctrica (PCH),AES,60.83,1277.36,68.5,True,Mantenimiento,11.81,2023-10-22
+PLANT_022,Solar Fotovoltaica,Enel,112.9,310.28,78.9,True,Pruebas,27.13,2020-10-21
+PLANT_023,Pequeña Hidroeléctrica (PCH),Empresa Privada Local,160.86,1402.31,89.6,True,En Construcción,49.8,2021-07-16
+PLANT_024,Biomasa,EPM,27.86,1036.74,16.6,True,Mantenimiento,40.23,2024-02-14
+PLANT_025,Solar Fotovoltaica,Empresa Privada Local,116.35,1236.68,27.3,True,Pruebas,42.44,2023-02-09
+PLANT_026,Solar Fotovoltaica,AES,101.35,838.72,85.9,True,En Construcción,32.13,2024-02-07
+PLANT_027,Pequeña Hidroeléctrica (PCH),Celsia,29.24,1171.48,51.7,True,En Construcción,3.04,2023-04-08
+PLANT_028,Biomasa,EPM,124.99,34.14,60.2,True,Mantenimiento,11.13,2022-01-27
+PLANT_029,Eólica Onshore,Isagen,55.09,1229.39,68.0,True,Pruebas,46.33,2020-02-27
+PLANT_030,Biomasa,Enel,97.82,69.81,69.3,True,Mantenimiento,18.94,2020-11-08
+PLANT_031,Pequeña Hidroeléctrica (PCH),Empresa Privada Local,16.91,1335.97,89.5,True,Operación Comercial,6.08,2020-07-25
+PLANT_032,Biomasa,EPM,92.19,1488.02,94.8,True,En Construcción,35.42,2022-10-12
+PLANT_033,Pequeña Hidroeléctrica (PCH),Empresa Privada Local,61.64,448.16,72.6,False,Mantenimiento,15.67,2021-04-14
+PLANT_034,Pequeña Hidroeléctrica (PCH),EPM,164.57,323.37,38.0,False,En Construcción,14.17,2020-11-01
+PLANT_035,Eólica Onshore,AES,11.87,1150.39,85.4,True,Pruebas,49.9,2022-10-10
+PLANT_036,Solar Fotovoltaica,AES,84.01,387.01,18.9,True,En Planeación,43.05,2021-06-01
+PLANT_037,Pequeña Hidroeléctrica (PCH),AES,91.96,1299.69,33.5,True,Mantenimiento,20.99,2024-10-17
+PLANT_038,Pequeña Hidroeléctrica (PCH),Empresa Privada Local,145.14,163.24,86.8,True,Mantenimiento,49.03,2023-08-06
+PLANT_039,Eólica Onshore,Isagen,115.07,197.67,35.5,True,En Construcción,32.86,2020-02-26
+PLANT_040,Pequeña Hidroeléctrica (PCH),AES,133.61,1468.94,32.7,True,Pruebas,37.36,2023-11-23
+PLANT_041,Solar Fotovoltaica,EPM,155.52,1014.02,26.1,False,Operación Comercial,2.54,2021-04-29
+PLANT_042,Eólica Onshore,AES,172.51,1271.86,83.7,True,Pruebas,6.96,2023-05-10
+PLANT_043,Solar Fotovoltaica,Celsia,63.12,493.25,55.0,True,Mantenimiento,32.02,2021-07-15
+PLANT_044,Solar Fotovoltaica,AES,107.84,1017.96,69.0,True,Operación Comercial,45.05,2022-04-16
+PLANT_045,Eólica Onshore,Empresa Privada Local,168.1,895.42,34.1,True,Pruebas,31.56,2022-05-11
+PLANT_046,Pequeña Hidroeléctrica (PCH),Isagen,197.9,908.69,75.6,True,En Planeación,7.57,2021-09-18
+PLANT_047,Solar Fotovoltaica,Celsia,177.96,1026.97,75.8,False,En Construcción,6.67,2024-02-10
+PLANT_048,Solar Fotovoltaica,Empresa Privada Local,74.61,867.29,40.0,True,Pruebas,42.37,2023-06-03
+PLANT_049,Solar Fotovoltaica,Empresa Privada Local,39.44,649.3,47.9,True,Pruebas,7.83,2024-10-17
+PLANT_050,Solar Fotovoltaica,Empresa Privada Local,98.13,421.12,31.8,True,En Planeación,26.49,2023-02-13
+PLANT_051,Eólica Onshore,EPM,148.46,1155.19,93.1,True,Mantenimiento,2.82,2024-06-16
+PLANT_052,Eólica Onshore,Empresa Privada Local,98.77,347.15,66.6,True,En Construcción,4.95,2023-09-22
+PLANT_053,Biomasa,EPM,96.89,1041.61,89.8,True,Pruebas,33.95,2024-10-24
+PLANT_054,Biomasa,Empresa Privada Local,167.73,357.67,39.3,True,Operación Comercial,34.77,2021-12-23
+PLANT_055,Solar Fotovoltaica,Enel,72.6,941.74,77.6,True,Pruebas,17.73,2021-04-30
+PLANT_056,Pequeña Hidroeléctrica (PCH),Celsia,172.03,1123.15,76.3,True,En Construcción,11.56,2020-06-02
+PLANT_057,Solar Fotovoltaica,Enel,81.66,335.88,70.3,True,Pruebas,40.87,2023-05-03
+PLANT_058,Pequeña Hidroeléctrica (PCH),Empresa Privada Local,65.98,99.32,92.3,True,En Planeación,11.64,2020-08-24
+PLANT_059,Solar Fotovoltaica,Celsia,91.07,205.15,46.5,True,Pruebas,27.56,2020-05-22
+PLANT_060,Biomasa,Celsia,152.61,912.94,25.5,True,Pruebas,48.44,2024-09-09
+PLANT_061,Biomasa,Isagen,25.64,1275.68,68.7,True,Operación Comercial,8.24,2022-01-22
+PLANT_062,Pequeña Hidroeléctrica (PCH),Enel,39.69,77.05,73.3,True,En Planeación,47.1,2021-10-15
+PLANT_063,Solar Fotovoltaica,Isagen,190.31,1103.89,61.0,True,En Planeación,9.96,2023-01-07
+PLANT_064,Pequeña Hidroeléctrica (PCH),Celsia,35.51,518.56,31.5,True,Pruebas,28.8,2022-10-14
+PLANT_065,Biomasa,EPM,113.76,723.01,55.4,True,Operación Comercial,19.47,2023-08-11
+PLANT_066,Solar Fotovoltaica,Celsia,116.07,1394.0,40.0,True,Pruebas,48.28,2021-08-23
+PLANT_067,Solar Fotovoltaica,Isagen,98.18,504.64,49.2,True,Pruebas,14.4,2024-11-27
+PLANT_068,Pequeña Hidroeléctrica (PCH),Enel,129.13,703.35,66.6,True,En Construcción,20.58,2022-12-15
+PLANT_069,Eólica Onshore,Empresa Privada Local,46.35,30.39,74.6,True,En Construcción,49.16,2020-08-07
+PLANT_070,Pequeña Hidroeléctrica (PCH),Empresa Privada Local,110.76,131.58,33.6,True,Operación Comercial,27.29,2021-05-15
+PLANT_071,Biomasa,Enel,74.75,395.3,47.4,True,Mantenimiento,25.63,2020-09-30
+PLANT_072,Biomasa,Empresa Privada Local,132.5,51.5,36.5,True,En Construcción,13.63,2020-02-27
+PLANT_073,Biomasa,Empresa Privada Local,28.67,950.75,30.9,True,Mantenimiento,35.37,2023-05-30
+PLANT_074,Biomasa,Isagen,114.39,645.33,77.7,True,En Planeación,1.7,2023-12-10
+PLANT_075,Biomasa,Enel,37.46,826.74,87.7,True,En Construcción,3.43,2020-12-27
+PLANT_076,Eólica Onshore,AES,56.09,270.22,44.6,True,En Construcción,30.37,2022-05-06
+PLANT_077,Solar Fotovoltaica,EPM,44.13,450.94,75.1,True,Operación Comercial,17.74,2024-07-16
+PLANT_078,Pequeña Hidroeléctrica (PCH),EPM,36.98,999.1,86.8,True,Mantenimiento,47.71,2020-09-10
+PLANT_079,Pequeña Hidroeléctrica (PCH),Empresa Privada Local,165.23,1448.3,82.7,True,En Construcción,45.26,2022-03-09
+PLANT_080,Biomasa,EPM,57.5,85.12,29.6,True,En Construcción,35.97,2021-11-07
+PLANT_081,Pequeña Hidroeléctrica (PCH),Enel,185.46,1336.67,91.5,True,Operación Comercial,41.09,2020-11-20
+PLANT_082,Biomasa,Enel,194.0,869.55,45.1,False,Operación Comercial,33.7,2022-11-25
+PLANT_083,Eólica Onshore,Celsia,114.47,850.24,42.1,False,Mantenimiento,7.15,2023-04-27
+PLANT_084,Eólica Onshore,Celsia,29.03,755.42,20.0,True,En Planeación,38.51,2024-06-07
+PLANT_085,Solar Fotovoltaica,EPM,75.22,113.4,53.9,True,En Planeación,11.3,2020-10-29
+PLANT_086,Eólica Onshore,AES,159.65,143.92,23.7,True,Pruebas,16.85,2020-12-03
+PLANT_087,Eólica Onshore,Celsia,73.79,905.36,34.9,True,En Construcción,41.14,2023-07-23
+PLANT_088,Solar Fotovoltaica,Celsia,17.86,518.03,40.4,True,Mantenimiento,27.29,2022-11-25
+PLANT_089,Pequeña Hidroeléctrica (PCH),Enel,111.58,1376.73,79.7,True,En Construcción,43.14,2020-02-04
+PLANT_090,Biomasa,AES,169.1,615.82,85.0,True,Mantenimiento,11.44,2023-01-12
+PLANT_091,Biomasa,Empresa Privada Local,159.29,223.49,39.2,True,Mantenimiento,30.78,2022-09-02
+PLANT_092,Pequeña Hidroeléctrica (PCH),EPM,35.44,1074.93,83.7,True,Mantenimiento,5.11,2021-02-03
+PLANT_093,Solar Fotovoltaica,Celsia,134.72,447.1,83.6,True,En Construcción,32.51,2022-01-18
+PLANT_094,Pequeña Hidroeléctrica (PCH),AES,44.49,792.95,76.2,False,Operación Comercial,38.36,2022-12-23
+PLANT_095,Eólica Onshore,AES,44.03,1049.77,26.7,True,En Construcción,29.66,2024-08-30
+PLANT_096,Solar Fotovoltaica,EPM,174.88,1351.39,70.2,True,Mantenimiento,14.05,2021-09-04
+PLANT_097,Solar Fotovoltaica,AES,50.31,1190.36,90.6,False,Pruebas,2.54,2024-11-04
+PLANT_098,Solar Fotovoltaica,AES,53.02,1017.78,69.6,True,En Planeación,6.85,2021-04-14
+PLANT_099,Biomasa,AES,0.63,1022.65,41.5,True,Mantenimiento,31.49,2022-06-16
+PLANT_100,Pequeña Hidroeléctrica (PCH),Celsia,174.2,1419.43,55.0,True,Pruebas,46.79,2021-02-02
+PLANT_101,Solar Fotovoltaica,EPM,158.62,450.78,66.7,True,Operación Comercial,11.12,2024-10-28
+PLANT_102,Solar Fotovoltaica,AES,125.65,11.66,55.8,True,Mantenimiento,37.02,2020-08-31
+PLANT_103,Solar Fotovoltaica,AES,150.18,415.21,24.6,True,Pruebas,43.46,2022-09-11
+PLANT_104,Pequeña Hidroeléctrica (PCH),Celsia,30.83,334.66,40.0,True,Mantenimiento,26.52,2021-11-14
+PLANT_105,Biomasa,EPM,91.94,996.13,79.2,True,En Construcción,33.79,2020-12-02
+PLANT_106,Eólica Onshore,Enel,70.57,954.23,83.9,True,Pruebas,40.94,2023-06-09
+PLANT_107,Biomasa,Celsia,19.21,894.26,26.0,False,En Construcción,13.77,2023-12-29
+PLANT_108,Solar Fotovoltaica,EPM,97.48,34.2,91.2,True,En Construcción,15.55,2022-12-25
+PLANT_109,Biomasa,AES,184.19,1095.88,41.3,True,Pruebas,1.03,2023-01-07
+PLANT_110,Biomasa,EPM,8.49,492.06,68.0,True,En Planeación,48.19,2021-07-21
+PLANT_111,Eólica Onshore,EPM,58.65,1000.93,75.1,True,Pruebas,45.96,2022-10-15
+PLANT_112,Pequeña Hidroeléctrica (PCH),Empresa Privada Local,41.9,839.3,80.0,False,En Planeación,38.46,2021-10-05
+PLANT_113,Pequeña Hidroeléctrica (PCH),EPM,48.01,520.67,90.7,True,Mantenimiento,4.87,2024-09-29
+PLANT_114,Biomasa,Enel,181.73,210.52,40.0,True,Mantenimiento,22.93,2023-10-11
+PLANT_115,Biomasa,EPM,93.88,150.68,83.7,True,Pruebas,5.99,2023-08-30
+PLANT_116,Pequeña Hidroeléctrica (PCH),Enel,93.53,1248.96,25.5,True,Mantenimiento,1.78,2024-01-24
+PLANT_117,Pequeña Hidroeléctrica (PCH),AES,152.23,1378.41,71.4,True,Operación Comercial,31.19,2020-02-27
+PLANT_118,Eólica Onshore,Enel,31.32,978.18,74.4,True,En Construcción,48.08,2021-09-25
+PLANT_119,Solar Fotovoltaica,AES,97.71,164.12,69.2,True,En Construcción,45.24,2022-05-11
+PLANT_120,Biomasa,AES,86.28,609.02,35.2,True,En Planeación,35.14,2024-01-19
+PLANT_121,Pequeña Hidroeléctrica (PCH),Enel,119.58,1096.12,84.8,True,Mantenimiento,5.74,2022-11-17
+PLANT_122,Biomasa,Celsia,199.91,1171.93,28.5,True,En Planeación,14.43,2022-06-04
+PLANT_123,Biomasa,Isagen,154.01,186.15,19.3,True,En Construcción,16.68,2022-05-17
+PLANT_124,Pequeña Hidroeléctrica (PCH),EPM,79.87,10.05,72.4,True,En Construcción,38.39,2020-10-14
+PLANT_125,Eólica Onshore,Empresa Privada Local,165.6,1071.08,53.0,False,Mantenimiento,40.31,2024-01-13
+PLANT_126,Biomasa,Isagen,34.56,541.33,82.9,True,Operación Comercial,19.87,2023-10-27
+PLANT_127,Eólica Onshore,EPM,6.58,389.18,45.7,True,Operación Comercial,21.48,2022-06-10
+PLANT_128,Pequeña Hidroeléctrica (PCH),EPM,41.29,29.22,28.5,True,Mantenimiento,3.18,2023-08-19
+PLANT_129,Solar Fotovoltaica,AES,68.41,815.05,81.9,True,Mantenimiento,15.17,2021-04-27
+PLANT_130,Solar Fotovoltaica,EPM,102.36,1278.21,58.9,True,En Planeación,23.11,2023-08-27
+PLANT_131,Biomasa,Empresa Privada Local,123.22,1436.87,30.1,True,Mantenimiento,6.73,2022-02-01
+PLANT_132,Pequeña Hidroeléctrica (PCH),EPM,182.17,852.96,72.6,True,Operación Comercial,23.21,2024-11-21
+PLANT_133,Eólica Onshore,Enel,102.22,776.55,55.9,True,Mantenimiento,42.81,2020-11-15
+PLANT_134,Biomasa,Isagen,100.5,136.73,63.3,True,En Planeación,29.48,2020-03-10
+PLANT_135,Pequeña Hidroeléctrica (PCH),Enel,10.52,827.82,51.9,True,En Planeación,4.87,2020-02-13
+PLANT_136,Pequeña Hidroeléctrica (PCH),Empresa Privada Local,7.46,576.17,81.3,True,En Planeación,10.39,2023-09-06
+PLANT_137,Eólica Onshore,EPM,110.46,914.63,81.4,True,En Planeación,24.25,2023-09-29
+PLANT_138,Biomasa,Empresa Privada Local,87.92,589.2,71.8,False,Pruebas,18.71,2021-03-28
+PLANT_139,Pequeña Hidroeléctrica (PCH),AES,167.92,368.05,23.4,True,Mantenimiento,18.58,2021-07-21
+PLANT_140,Pequeña Hidroeléctrica (PCH),Enel,32.56,151.5,82.1,True,En Construcción,26.93,2022-06-10
+PLANT_141,Pequeña Hidroeléctrica (PCH),Enel,5.48,479.23,68.7,True,Mantenimiento,29.64,2024-04-27
+PLANT_142,Eólica Onshore,Celsia,90.08,154.0,70.8,True,Pruebas,40.05,2021-07-13
+PLANT_143,Biomasa,EPM,47.88,273.58,44.0,True,En Planeación,17.71,2020-07-27
+PLANT_144,Biomasa,AES,10.4,1481.13,85.3,True,Pruebas,40.47,2022-11-29
+PLANT_145,Biomasa,Enel,145.06,671.71,73.0,True,Operación Comercial,17.59,2021-05-25
+PLANT_146,Biomasa,Enel,22.76,802.49,24.0,True,Operación Comercial,3.72,2024-10-22
+PLANT_147,Solar Fotovoltaica,AES,121.86,1311.69,47.6,True,Mantenimiento,28.16,2023-06-14
+PLANT_148,Solar Fotovoltaica,Empresa Privada Local,56.57,1493.4,85.9,True,Mantenimiento,29.81,2023-05-18
+PLANT_149,Biomasa,Empresa Privada Local,35.11,878.24,18.8,True,En Construcción,46.79,2021-12-24
+PLANT_150,Eólica Onshore,EPM,76.26,1220.59,91.9,True,En Construcción,36.58,2024-07-06
+PLANT_151,Solar Fotovoltaica,Celsia,160.39,497.14,69.3,True,Operación Comercial,45.97,2020-11-19
+PLANT_152,Pequeña Hidroeléctrica (PCH),Enel,78.72,465.56,65.5,False,En Planeación,45.51,2021-11-24
+PLANT_153,Solar Fotovoltaica,Celsia,150.28,610.03,36.6,True,Pruebas,30.62,2022-09-26
+PLANT_154,Pequeña Hidroeléctrica (PCH),Empresa Privada Local,25.53,1012.04,34.9,True,En Construcción,26.86,2020-04-02
+PLANT_155,Biomasa,Empresa Privada Local,154.67,1026.47,90.4,True,En Construcción,28.31,2022-09-22
+PLANT_156,Solar Fotovoltaica,Isagen,47.77,479.71,38.9,False,En Planeación,48.94,2021-12-28
+PLANT_157,Eólica Onshore,EPM,135.64,208.48,77.0,True,En Planeación,38.89,2023-08-12
+PLANT_158,Solar Fotovoltaica,Isagen,113.37,952.27,46.4,False,Mantenimiento,6.21,2022-03-30
+PLANT_159,Solar Fotovoltaica,Isagen,185.86,201.21,26.1,True,Pruebas,39.14,2024-03-27
+PLANT_160,Solar Fotovoltaica,Isagen,77.77,871.95,15.9,True,En Planeación,9.36,2024-02-01
+PLANT_161,Biomasa,EPM,13.7,1043.2,58.5,False,En Construcción,22.92,2021-07-01
+PLANT_162,Eólica Onshore,EPM,4.32,1053.91,93.1,True,En Construcción,11.31,2023-07-26
+PLANT_163,Solar Fotovoltaica,AES,165.46,1132.67,44.5,True,Operación Comercial,34.79,2023-05-22
+PLANT_164,Eólica Onshore,Celsia,105.18,1310.56,43.6,True,En Planeación,43.99,2022-03-02
+PLANT_165,Biomasa,Celsia,155.16,754.94,42.5,True,Mantenimiento,15.23,2022-12-19
+PLANT_166,Pequeña Hidroeléctrica (PCH),AES,47.27,1098.07,56.6,False,Pruebas,5.02,2022-04-24
+PLANT_167,Solar Fotovoltaica,AES,69.34,932.57,50.3,True,Mantenimiento,15.63,2023-11-05
+PLANT_168,Eólica Onshore,Empresa Privada Local,6.51,288.09,85.4,True,En Construcción,33.95,2022-09-12
+PLANT_169,Eólica Onshore,Isagen,192.32,48.28,55.4,True,Mantenimiento,17.11,2020-08-04
+PLANT_170,Biomasa,AES,133.74,433.97,55.6,True,En Construcción,14.63,2024-02-16
+PLANT_171,Solar Fotovoltaica,Enel,186.67,670.12,26.1,True,En Construcción,10.04,2023-10-13
+PLANT_172,Pequeña Hidroeléctrica (PCH),Celsia,53.47,929.49,93.6,True,En Construcción,25.38,2021-02-26
+PLANT_173,Eólica Onshore,AES,122.49,1276.44,35.0,True,En Construcción,14.52,2022-12-04
+PLANT_174,Solar Fotovoltaica,Enel,135.86,302.41,20.9,False,En Construcción,36.82,2024-04-19
+PLANT_175,Pequeña Hidroeléctrica (PCH),Enel,63.85,197.07,68.1,True,Operación Comercial,4.75,2020-02-03
+PLANT_176,Eólica Onshore,Enel,169.7,1445.59,62.6,True,Mantenimiento,33.54,2024-06-10
+PLANT_177,Eólica Onshore,Empresa Privada Local,189.46,170.99,48.2,False,Operación Comercial,12.64,2021-12-06
+PLANT_178,Pequeña Hidroeléctrica (PCH),Empresa Privada Local,177.03,722.95,48.8,True,Operación Comercial,24.97,2024-07-21
+PLANT_179,Pequeña Hidroeléctrica (PCH),Enel,147.94,882.49,77.8,True,En Planeación,15.02,2022-08-06
+PLANT_180,Biomasa,Empresa Privada Local,55.85,816.65,30.7,True,En Planeación,36.42,2020-05-26
+PLANT_181,Solar Fotovoltaica,Isagen,56.68,138.19,80.6,True,En Planeación,47.32,2023-04-08
+PLANT_182,Solar Fotovoltaica,Enel,192.69,94.97,66.9,True,Pruebas,45.94,2022-09-25
+PLANT_183,Biomasa,Isagen,2.55,167.17,48.5,False,En Planeación,29.59,2022-10-01
+PLANT_184,Eólica Onshore,Isagen,143.35,882.53,51.6,True,Mantenimiento,23.67,2023-03-20
+PLANT_185,Pequeña Hidroeléctrica (PCH),Enel,141.4,821.07,35.5,True,Operación Comercial,41.1,2023-04-23
+PLANT_186,Pequeña Hidroeléctrica (PCH),Celsia,124.73,358.27,75.2,True,Mantenimiento,34.48,2020-10-08
+PLANT_187,Pequeña Hidroeléctrica (PCH),Enel,198.03,960.28,56.0,True,En Planeación,9.99,2022-12-11
+PLANT_188,Eólica Onshore,Enel,62.72,1231.9,40.7,True,Pruebas,41.23,2020-05-09
+PLANT_189,Pequeña Hidroeléctrica (PCH),Empresa Privada Local,68.32,71.95,62.7,True,Pruebas,22.02,2023-02-17
+PLANT_190,Pequeña Hidroeléctrica (PCH),Enel,16.25,752.21,94.7,True,Operación Comercial,10.26,2021-05-22
+PLANT_191,Biomasa,Celsia,88.84,1037.07,49.8,True,Mantenimiento,14.81,2021-11-02
+PLANT_192,Eólica Onshore,Empresa Privada Local,52.58,385.94,88.7,True,En Construcción,14.11,2024-01-24
+PLANT_193,Solar Fotovoltaica,EPM,69.01,468.58,42.6,True,Mantenimiento,26.44,2022-12-31
+PLANT_194,Biomasa,EPM,167.0,924.32,19.4,True,En Planeación,12.48,2022-07-05
+PLANT_195,Biomasa,Isagen,187.13,1347.92,31.3,True,En Construcción,7.05,2022-04-27
+PLANT_196,Solar Fotovoltaica,Isagen,37.55,1216.79,48.5,True,Pruebas,7.06,2021-09-26
+PLANT_197,Biomasa,Celsia,74.82,878.86,32.6,True,Operación Comercial,29.58,2020-01-01
+PLANT_198,Eólica Onshore,AES,185.76,1098.03,15.0,True,Operación Comercial,37.0,2023-09-09
+PLANT_199,Pequeña Hidroeléctrica (PCH),EPM,12.83,553.59,88.2,True,Pruebas,16.76,2020-10-30
+PLANT_200,Eólica Onshore,Isagen,18.93,965.04,82.5,True,En Planeación,2.7,2020-05-18
+PLANT_201,Solar Fotovoltaica,EPM,32.98,704.61,74.4,True,Pruebas,7.23,2020-12-09
+PLANT_202,Solar Fotovoltaica,Celsia,119.24,293.0,28.4,True,En Planeación,45.82,2022-11-19
+PLANT_203,Biomasa,Celsia,30.52,1055.59,24.6,True,En Construcción,25.18,2020-11-21
+PLANT_204,Eólica Onshore,AES,193.63,839.13,20.4,True,Pruebas,23.23,2020-12-19
+PLANT_205,Eólica Onshore,AES,89.62,544.35,72.9,True,En Planeación,2.86,2021-05-12
+PLANT_206,Solar Fotovoltaica,Empresa Privada Local,100.55,1367.9,89.3,True,En Construcción,36.7,2021-12-29
+PLANT_207,Eólica Onshore,Celsia,49.71,41.19,49.4,True,Pruebas,26.88,2021-01-01
+PLANT_208,Solar Fotovoltaica,Isagen,94.46,480.5,24.5,True,Operación Comercial,10.9,2022-03-09
+PLANT_209,Eólica Onshore,EPM,132.55,94.75,56.0,True,Pruebas,6.39,2023-12-01
+PLANT_210,Eólica Onshore,Enel,150.36,1152.13,42.9,True,Mantenimiento,19.79,2023-11-16
+PLANT_211,Eólica Onshore,AES,150.9,1056.14,45.0,True,Pruebas,42.02,2023-02-03
+PLANT_212,Solar Fotovoltaica,Enel,115.79,503.71,64.7,True,Mantenimiento,43.4,2023-06-13
+PLANT_213,Biomasa,Isagen,180.92,1016.74,72.5,False,En Construcción,30.54,2021-07-15
+PLANT_214,Eólica Onshore,AES,163.57,599.95,23.8,True,Pruebas,36.65,2021-12-07
+PLANT_215,Solar Fotovoltaica,Enel,151.53,1136.82,17.8,True,En Construcción,6.64,2020-09-16
+PLANT_216,Solar Fotovoltaica,Isagen,11.59,686.73,94.5,False,En Construcción,29.82,2023-02-22
+PLANT_217,Eólica Onshore,EPM,1.87,624.3,33.6,True,En Planeación,33.68,2021-12-18
+PLANT_218,Eólica Onshore,Isagen,42.88,1402.75,19.3,True,En Construcción,10.83,2022-09-01
+PLANT_219,Biomasa,Empresa Privada Local,132.87,383.81,30.2,True,En Construcción,44.13,2020-11-02
+PLANT_220,Solar Fotovoltaica,AES,82.53,189.47,18.1,True,Pruebas,10.55,2023-08-03
+PLANT_221,Solar Fotovoltaica,Celsia,80.78,880.97,46.3,True,Pruebas,16.36,2021-12-16
+PLANT_222,Pequeña Hidroeléctrica (PCH),EPM,176.98,1454.29,79.2,True,Operación Comercial,31.41,2021-07-16
+PLANT_223,Solar Fotovoltaica,Enel,179.16,572.98,42.3,True,En Planeación,32.28,2023-07-30
+PLANT_224,Biomasa,AES,181.88,102.43,50.5,False,En Construcción,35.27,2023-08-16
+PLANT_225,Pequeña Hidroeléctrica (PCH),Celsia,63.12,515.56,69.0,True,En Planeación,6.49,2021-08-09
+PLANT_226,Pequeña Hidroeléctrica (PCH),Isagen,138.37,763.84,55.7,True,Mantenimiento,42.62,2020-04-28
+PLANT_227,Pequeña Hidroeléctrica (PCH),Celsia,54.69,251.27,83.9,True,En Construcción,27.11,2022-09-18
+PLANT_228,Eólica Onshore,AES,38.53,990.57,84.3,True,En Planeación,24.09,2023-06-01
+PLANT_229,Eólica Onshore,AES,37.33,1496.65,15.8,True,Operación Comercial,49.07,2024-03-14
+PLANT_230,Solar Fotovoltaica,Empresa Privada Local,68.75,683.09,77.2,True,Operación Comercial,37.28,2021-05-15
+PLANT_231,Pequeña Hidroeléctrica (PCH),Empresa Privada Local,86.28,538.55,51.9,True,En Construcción,6.78,2022-03-09
+PLANT_232,Biomasa,Celsia,166.27,607.05,94.1,True,Mantenimiento,38.07,2023-05-31
+PLANT_233,Eólica Onshore,Isagen,24.42,181.57,53.7,True,Operación Comercial,5.67,2022-04-26
+PLANT_234,Biomasa,Celsia,147.12,1326.08,94.0,True,Operación Comercial,2.35,2020-08-08
+PLANT_235,Biomasa,AES,106.53,628.09,75.4,True,Mantenimiento,20.78,2024-05-06
+PLANT_236,Eólica Onshore,AES,57.95,587.04,34.9,True,En Planeación,49.69,2023-11-04
+PLANT_237,Eólica Onshore,Enel,98.82,992.94,58.1,False,Operación Comercial,9.57,2022-04-03
+PLANT_238,Eólica Onshore,Empresa Privada Local,60.34,668.63,94.4,True,Pruebas,33.96,2024-06-24
+PLANT_239,Eólica Onshore,Enel,119.42,975.87,83.6,True,Operación Comercial,9.5,2022-11-05
+PLANT_240,Pequeña Hidroeléctrica (PCH),EPM,87.05,101.55,22.8,True,En Planeación,36.51,2021-06-16
+PLANT_241,Pequeña Hidroeléctrica (PCH),AES,33.3,1222.45,71.5,True,En Planeación,25.76,2021-12-14
+PLANT_242,Pequeña Hidroeléctrica (PCH),Enel,23.76,1411.35,42.6,True,En Construcción,34.32,2024-06-29
+PLANT_243,Pequeña Hidroeléctrica (PCH),Celsia,109.57,976.66,15.6,True,Pruebas,10.94,2022-04-29
+PLANT_244,Solar Fotovoltaica,Empresa Privada Local,180.53,1432.3,47.3,True,En Planeación,37.54,2021-10-08
+PLANT_245,Pequeña Hidroeléctrica (PCH),Empresa Privada Local,69.12,235.63,33.8,True,Mantenimiento,49.79,2024-10-27
+PLANT_246,Eólica Onshore,Isagen,146.73,721.35,80.5,True,Pruebas,33.62,2020-10-04
+PLANT_247,Biomasa,Celsia,131.9,906.69,42.0,True,Pruebas,25.18,2021-01-06
+PLANT_248,Pequeña Hidroeléctrica (PCH),Isagen,186.35,876.79,81.2,True,Mantenimiento,46.24,2023-02-11
+PLANT_249,Solar Fotovoltaica,Enel,164.29,608.18,15.0,True,Operación Comercial,1.78,2024-09-08
+PLANT_250,Eólica Onshore,EPM,113.54,513.75,39.6,True,Mantenimiento,36.77,2021-06-06
+PLANT_251,Biomasa,Celsia,131.58,198.97,34.3,False,Mantenimiento,44.55,2021-05-24
+PLANT_252,Biomasa,Celsia,179.73,593.7,33.7,True,Operación Comercial,4.02,2024-09-27
+PLANT_253,Pequeña Hidroeléctrica (PCH),Celsia,80.2,252.36,20.5,False,Operación Comercial,23.05,2024-03-18
+PLANT_254,Biomasa,Isagen,65.7,1104.2,30.0,True,Operación Comercial,11.03,2023-12-27
+PLANT_255,Pequeña Hidroeléctrica (PCH),Enel,2.66,321.16,59.4,True,Operación Comercial,28.76,2020-10-12
+PLANT_256,Pequeña Hidroeléctrica (PCH),Celsia,165.4,97.26,38.3,True,Operación Comercial,32.83,2024-03-23
+PLANT_257,Eólica Onshore,Celsia,160.3,833.03,48.4,True,Mantenimiento,15.83,2021-11-03
+PLANT_258,Eólica Onshore,Empresa Privada Local,21.34,896.89,45.1,True,En Construcción,23.54,2020-03-22
+PLANT_259,Solar Fotovoltaica,EPM,115.58,1309.15,85.1,False,En Construcción,14.69,2020-06-06
+PLANT_260,Eólica Onshore,Empresa Privada Local,93.06,869.7,87.4,True,En Planeación,19.1,2022-05-08
+PLANT_261,Eólica Onshore,Empresa Privada Local,24.18,524.77,54.4,True,En Construcción,8.82,2024-10-09
+PLANT_262,Pequeña Hidroeléctrica (PCH),EPM,196.12,1206.49,41.4,True,En Construcción,44.39,2020-09-21
+PLANT_263,Eólica Onshore,Enel,43.33,815.02,23.5,True,Mantenimiento,1.49,2024-11-19
+PLANT_264,Pequeña Hidroeléctrica (PCH),Empresa Privada Local,13.91,128.13,91.3,True,Operación Comercial,44.24,2020-06-17
+PLANT_265,Pequeña Hidroeléctrica (PCH),Enel,119.17,853.12,19.8,True,Operación Comercial,29.01,2023-11-10
+PLANT_266,Eólica Onshore,Empresa Privada Local,147.9,1362.95,38.8,True,Mantenimiento,17.25,2021-05-03
+PLANT_267,Solar Fotovoltaica,AES,6.97,600.51,38.8,True,En Construcción,36.43,2021-05-18
+PLANT_268,Solar Fotovoltaica,EPM,131.91,451.53,40.6,True,Mantenimiento,25.88,2022-05-09
+PLANT_269,Biomasa,Empresa Privada Local,106.69,223.77,28.1,True,En Planeación,25.46,2022-02-05
+PLANT_270,Biomasa,AES,21.1,235.65,77.7,True,Operación Comercial,6.4,2023-07-29
+PLANT_271,Eólica Onshore,Isagen,34.92,654.83,24.8,True,Pruebas,20.09,2021-10-08
+PLANT_272,Solar Fotovoltaica,AES,113.81,897.56,65.8,True,En Planeación,12.81,2023-09-21
+PLANT_273,Pequeña Hidroeléctrica (PCH),Celsia,59.62,130.12,24.9,True,En Planeación,1.77,2024-08-16
+PLANT_274,Biomasa,Empresa Privada Local,187.69,1409.96,20.6,True,Mantenimiento,18.64,2020-07-20
+PLANT_275,Pequeña Hidroeléctrica (PCH),AES,163.84,1135.15,87.8,True,En Construcción,5.4,2023-10-02
+PLANT_276,Biomasa,Enel,196.72,884.07,30.2,True,Operación Comercial,13.58,2020-02-04
+PLANT_277,Eólica Onshore,Isagen,52.3,1244.37,80.7,True,Pruebas,5.53,2024-08-15
+PLANT_278,Solar Fotovoltaica,Empresa Privada Local,193.96,129.48,58.6,True,En Planeación,5.95,2024-06-15
+PLANT_279,Biomasa,Celsia,86.53,720.49,21.2,True,Pruebas,10.75,2021-03-13
+PLANT_280,Solar Fotovoltaica,AES,69.83,948.84,91.4,True,En Construcción,49.99,2021-07-05
+PLANT_281,Pequeña Hidroeléctrica (PCH),Isagen,10.54,1244.69,34.8,True,En Construcción,1.11,2022-01-02
+PLANT_282,Eólica Onshore,Empresa Privada Local,11.03,1177.37,83.8,True,Pruebas,32.29,2024-08-10
+PLANT_283,Solar Fotovoltaica,Isagen,138.56,422.83,28.5,True,Operación Comercial,7.92,2021-09-12
+PLANT_284,Eólica Onshore,Celsia,91.86,1411.91,83.3,True,En Construcción,46.11,2021-06-28
+PLANT_285,Solar Fotovoltaica,AES,45.69,195.28,16.1,False,Pruebas,5.59,2023-06-20
+PLANT_286,Pequeña Hidroeléctrica (PCH),Isagen,122.99,1313.95,55.9,False,En Planeación,47.8,2024-02-14
+PLANT_287,Pequeña Hidroeléctrica (PCH),Isagen,50.95,1456.7,76.6,True,Pruebas,30.94,2024-10-16
+PLANT_288,Eólica Onshore,EPM,115.74,273.96,89.8,True,Pruebas,1.06,2021-08-27
+PLANT_289,Pequeña Hidroeléctrica (PCH),Isagen,72.16,1085.88,87.7,True,Mantenimiento,44.81,2021-02-13
+PLANT_290,Biomasa,EPM,164.8,70.03,80.6,False,En Construcción,26.56,2020-06-22
+PLANT_291,Solar Fotovoltaica,AES,164.23,614.08,86.1,True,Operación Comercial,13.87,2024-04-08
+PLANT_292,Pequeña Hidroeléctrica (PCH),Empresa Privada Local,95.73,779.26,30.9,True,Operación Comercial,38.6,2022-11-16
+PLANT_293,Biomasa,Empresa Privada Local,70.49,875.16,37.7,True,Mantenimiento,46.41,2021-02-10
+PLANT_294,Eólica Onshore,AES,72.83,1404.55,38.1,True,Operación Comercial,24.7,2022-09-24
+PLANT_295,Biomasa,AES,161.24,1011.65,45.2,True,Pruebas,16.46,2020-07-22
+PLANT_296,Eólica Onshore,Enel,65.97,727.1,46.5,False,Mantenimiento,39.66,2021-10-09
+PLANT_297,Eólica Onshore,AES,42.21,1216.42,58.6,True,En Planeación,34.41,2021-06-15
+PLANT_298,Solar Fotovoltaica,Isagen,17.4,1426.29,27.8,True,En Construcción,44.55,2024-04-25
+PLANT_299,Solar Fotovoltaica,Empresa Privada Local,93.61,42.88,70.3,True,En Construcción,34.93,2023-10-12
+PLANT_300,Biomasa,Celsia,96.69,1473.96,28.4,True,En Construcción,12.93,2023-11-01
+PLANT_301,Solar Fotovoltaica,Empresa Privada Local,168.26,138.34,39.8,True,Pruebas,46.65,2020-03-20
+PLANT_302,Solar Fotovoltaica,EPM,44.64,1223.44,55.3,True,En Planeación,6.14,2022-06-26
+PLANT_303,Solar Fotovoltaica,Empresa Privada Local,76.51,427.7,78.7,True,Mantenimiento,14.13,2020-09-10
+PLANT_304,Biomasa,Enel,161.78,206.95,74.2,True,Mantenimiento,26.49,2022-05-31
+PLANT_305,Pequeña Hidroeléctrica (PCH),AES,164.81,665.38,66.6,True,En Construcción,28.72,2023-05-14
+PLANT_306,Solar Fotovoltaica,AES,77.23,969.5,27.5,True,En Planeación,1.75,2020-10-27
+PLANT_307,Solar Fotovoltaica,Empresa Privada Local,92.1,577.62,58.8,False,En Planeación,39.25,2023-01-21
+PLANT_308,Biomasa,Celsia,61.01,91.3,22.0,False,En Planeación,18.72,2023-10-16
+PLANT_309,Pequeña Hidroeléctrica (PCH),Celsia,186.54,903.2,45.2,True,Operación Comercial,20.91,2022-11-05
+PLANT_310,Solar Fotovoltaica,Enel,24.17,1354.58,48.1,True,Operación Comercial,40.66,2021-03-10
+PLANT_311,Eólica Onshore,EPM,186.78,580.99,18.2,False,En Construcción,19.58,2020-12-10
+PLANT_312,Biomasa,Empresa Privada Local,136.93,332.34,36.9,True,En Planeación,3.31,2024-04-13
+PLANT_313,Solar Fotovoltaica,AES,106.55,669.44,91.5,True,En Planeación,9.65,2020-01-09
+PLANT_314,Solar Fotovoltaica,Empresa Privada Local,7.02,82.06,91.3,False,Mantenimiento,47.84,2021-02-22
+PLANT_315,Eólica Onshore,Enel,95.38,1232.53,43.2,True,Mantenimiento,4.45,2020-06-24
+PLANT_316,Eólica Onshore,Isagen,81.85,1241.25,18.4,True,En Construcción,18.39,2022-06-11
+PLANT_317,Biomasa,Isagen,32.66,886.12,29.3,False,En Planeación,25.66,2020-12-18
+PLANT_318,Biomasa,Enel,131.45,536.12,46.4,True,En Construcción,25.17,2023-02-26
+PLANT_319,Eólica Onshore,AES,194.24,1201.68,90.8,True,Mantenimiento,1.19,2024-01-04
+PLANT_320,Biomasa,Enel,112.66,836.48,26.3,True,Mantenimiento,25.56,2024-07-26
+PLANT_321,Eólica Onshore,AES,143.09,1240.64,76.1,True,Operación Comercial,19.8,2023-01-01
+PLANT_322,Solar Fotovoltaica,Celsia,14.16,950.87,23.7,True,En Construcción,48.63,2022-07-05
+PLANT_323,Eólica Onshore,Enel,83.82,1178.76,93.5,True,En Construcción,8.8,2024-06-29
+PLANT_324,Eólica Onshore,AES,23.71,901.86,45.5,False,En Planeación,18.35,2022-01-24
+PLANT_325,Pequeña Hidroeléctrica (PCH),Enel,122.75,627.07,77.0,True,En Planeación,21.55,2023-09-12
+PLANT_326,Eólica Onshore,Enel,187.73,1437.34,42.4,True,Operación Comercial,20.14,2021-10-13
+PLANT_327,Eólica Onshore,AES,132.52,816.26,65.2,True,Pruebas,33.63,2020-10-27
+PLANT_328,Pequeña Hidroeléctrica (PCH),AES,15.82,911.58,30.4,True,Pruebas,11.56,2021-11-22
+PLANT_329,Biomasa,EPM,71.26,338.53,26.7,True,Pruebas,11.83,2021-10-14
+PLANT_330,Pequeña Hidroeléctrica (PCH),Enel,110.36,942.22,90.0,False,En Construcción,36.73,2023-11-23
+PLANT_331,Solar Fotovoltaica,Isagen,80.94,861.7,88.4,True,En Construcción,25.51,2022-11-26
+PLANT_332,Pequeña Hidroeléctrica (PCH),Enel,166.81,285.41,86.0,True,Mantenimiento,21.34,2020-08-11
+PLANT_333,Solar Fotovoltaica,Enel,163.03,98.78,65.0,True,En Construcción,9.29,2021-07-24
+PLANT_334,Biomasa,AES,122.56,910.5,79.7,True,En Construcción,10.19,2021-06-23
+PLANT_335,Pequeña Hidroeléctrica (PCH),Enel,75.0,1147.9,20.5,True,En Construcción,1.52,2024-01-15
+PLANT_336,Pequeña Hidroeléctrica (PCH),Empresa Privada Local,51.44,789.87,41.8,True,Operación Comercial,5.48,2022-07-28
+PLANT_337,Biomasa,Enel,21.62,347.89,40.1,True,En Construcción,28.29,2022-04-18
+PLANT_338,Solar Fotovoltaica,Empresa Privada Local,71.3,1003.12,65.9,False,En Planeación,44.7,2023-12-07
+PLANT_339,Pequeña Hidroeléctrica (PCH),Isagen,82.93,129.36,43.5,True,En Planeación,15.07,2021-11-02
+PLANT_340,Solar Fotovoltaica,AES,135.33,668.33,26.9,True,Mantenimiento,17.06,2023-03-31
+PLANT_341,Pequeña Hidroeléctrica (PCH),Enel,131.8,253.42,62.7,True,Operación Comercial,6.66,2021-02-26
+PLANT_342,Eólica Onshore,Empresa Privada Local,14.49,284.84,80.2,True,En Planeación,20.04,2021-07-19
+PLANT_343,Pequeña Hidroeléctrica (PCH),Empresa Privada Local,79.35,311.42,45.6,True,Operación Comercial,2.82,2024-11-24
+PLANT_344,Biomasa,Empresa Privada Local,36.76,586.19,25.6,True,Operación Comercial,45.96,2022-10-13
+PLANT_345,Biomasa,Celsia,31.78,86.21,30.7,True,Mantenimiento,33.98,2020-05-08
+PLANT_346,Solar Fotovoltaica,EPM,165.55,602.71,34.0,True,Operación Comercial,49.55,2023-11-28
+PLANT_347,Pequeña Hidroeléctrica (PCH),Isagen,8.86,772.44,39.0,True,En Construcción,44.26,2020-06-03
+PLANT_348,Solar Fotovoltaica,Enel,84.13,730.11,66.4,True,Operación Comercial,24.18,2023-01-16
+PLANT_349,Solar Fotovoltaica,Celsia,34.06,580.35,63.1,True,Mantenimiento,26.46,2024-02-01
+PLANT_350,Eólica Onshore,Enel,175.93,1260.33,70.7,True,Mantenimiento,10.34,2020-02-17
+PLANT_351,Eólica Onshore,Enel,111.63,226.54,44.0,True,Mantenimiento,23.64,2024-05-11
+PLANT_352,Biomasa,AES,46.66,763.49,80.9,True,En Planeación,45.25,2024-10-23
+PLANT_353,Solar Fotovoltaica,AES,100.73,102.44,31.3,True,En Construcción,3.49,2022-02-04
+PLANT_354,Biomasa,AES,146.43,116.02,52.5,True,En Planeación,43.31,2020-02-06
+PLANT_355,Pequeña Hidroeléctrica (PCH),Celsia,191.64,865.06,79.1,True,Pruebas,17.71,2023-07-17
+PLANT_356,Solar Fotovoltaica,Enel,44.48,853.37,29.4,True,En Construcción,45.08,2024-03-06
+PLANT_357,Solar Fotovoltaica,EPM,177.29,1318.27,23.8,True,Operación Comercial,47.1,2024-10-30
+PLANT_358,Pequeña Hidroeléctrica (PCH),Isagen,186.89,841.23,85.7,True,Mantenimiento,33.87,2022-09-23
+PLANT_359,Pequeña Hidroeléctrica (PCH),AES,183.33,1440.09,42.4,True,Pruebas,33.56,2022-11-02
+PLANT_360,Biomasa,AES,127.27,82.56,69.7,False,En Construcción,23.18,2024-11-21
+PLANT_361,Biomasa,Enel,126.15,156.03,17.0,True,En Planeación,41.94,2022-03-14
+PLANT_362,Pequeña Hidroeléctrica (PCH),Enel,80.94,75.66,70.2,True,Mantenimiento,48.12,2021-07-20
+PLANT_363,Biomasa,Celsia,150.6,286.06,40.3,True,En Planeación,38.98,2022-10-18
+PLANT_364,Pequeña Hidroeléctrica (PCH),Celsia,106.49,816.49,19.5,True,En Construcción,31.47,2021-02-12
+PLANT_365,Solar Fotovoltaica,AES,135.65,971.9,63.8,True,En Construcción,30.73,2023-01-08
+PLANT_366,Solar Fotovoltaica,Enel,85.98,77.92,34.3,True,Pruebas,42.62,2020-11-28
+PLANT_367,Eólica Onshore,EPM,146.43,1419.5,45.9,True,Operación Comercial,27.52,2021-05-28
+PLANT_368,Solar Fotovoltaica,Isagen,164.98,1264.83,21.4,True,En Planeación,40.39,2022-09-09
+PLANT_369,Pequeña Hidroeléctrica (PCH),Enel,29.71,451.95,26.8,True,Pruebas,25.94,2023-07-20
+PLANT_370,Biomasa,Enel,166.67,125.01,38.8,True,Mantenimiento,4.06,2024-05-31
+PLANT_371,Eólica Onshore,Empresa Privada Local,108.29,263.13,22.2,True,Operación Comercial,19.81,2021-05-10
+PLANT_372,Biomasa,Celsia,169.01,199.15,87.9,True,Pruebas,22.78,2020-07-16
+PLANT_373,Pequeña Hidroeléctrica (PCH),Isagen,86.54,193.69,15.5,True,En Planeación,7.94,2022-04-18
+PLANT_374,Solar Fotovoltaica,AES,76.12,782.66,53.7,False,En Construcción,6.02,2021-06-20
+PLANT_375,Eólica Onshore,Enel,183.05,376.31,24.9,False,Mantenimiento,27.24,2024-11-26
+PLANT_376,Pequeña Hidroeléctrica (PCH),AES,50.61,543.63,39.6,True,En Planeación,5.17,2022-02-19
+PLANT_377,Eólica Onshore,Enel,168.92,1484.36,89.1,True,Operación Comercial,15.84,2021-12-31
+PLANT_378,Eólica Onshore,AES,97.06,1029.63,27.9,True,Operación Comercial,37.49,2024-07-20
+PLANT_379,Solar Fotovoltaica,Isagen,103.06,1423.98,92.3,False,En Construcción,48.26,2021-02-28
+PLANT_380,Pequeña Hidroeléctrica (PCH),Celsia,62.04,222.41,31.5,True,En Construcción,36.18,2020-12-29
+PLANT_381,Biomasa,Isagen,114.82,579.39,74.3,True,Mantenimiento,49.64,2024-03-08
+PLANT_382,Eólica Onshore,Empresa Privada Local,65.38,836.55,58.7,True,Mantenimiento,35.22,2024-11-17
+PLANT_383,Eólica Onshore,EPM,8.33,124.37,85.8,True,En Construcción,15.4,2022-10-29
+PLANT_384,Biomasa,Celsia,54.76,16.24,59.3,True,En Construcción,33.93,2024-06-28
+PLANT_385,Pequeña Hidroeléctrica (PCH),Isagen,1.77,1008.95,57.8,True,Operación Comercial,35.41,2024-07-23
+PLANT_386,Eólica Onshore,Empresa Privada Local,195.68,966.31,30.6,True,En Construcción,19.21,2022-04-09
+PLANT_387,Eólica Onshore,EPM,193.17,622.08,28.3,True,Pruebas,1.87,2023-08-13
+PLANT_388,Eólica Onshore,Empresa Privada Local,79.33,739.57,88.3,True,En Planeación,35.46,2023-03-03
+PLANT_389,Pequeña Hidroeléctrica (PCH),Enel,145.81,629.01,41.2,True,En Construcción,2.06,2021-04-08
+PLANT_390,Pequeña Hidroeléctrica (PCH),Enel,69.49,45.77,44.8,True,Mantenimiento,31.93,2021-03-19
+PLANT_391,Biomasa,AES,134.38,509.7,75.8,True,Pruebas,9.02,2023-05-11
+PLANT_392,Pequeña Hidroeléctrica (PCH),Celsia,161.18,273.85,42.1,True,Mantenimiento,28.71,2022-02-12
+PLANT_393,Pequeña Hidroeléctrica (PCH),Enel,189.38,156.65,91.2,True,Pruebas,25.69,2023-05-08
+PLANT_394,Solar Fotovoltaica,Empresa Privada Local,80.34,1435.51,74.0,True,En Construcción,1.66,2022-08-16
+PLANT_395,Biomasa,Celsia,156.77,903.05,62.8,False,En Planeación,18.78,2021-07-01
+PLANT_396,Eólica Onshore,Enel,53.55,1095.7,85.5,True,Mantenimiento,30.45,2024-11-01
+PLANT_397,Pequeña Hidroeléctrica (PCH),AES,198.07,479.89,19.0,True,Pruebas,42.58,2024-07-30
+PLANT_398,Eólica Onshore,Isagen,5.64,595.79,35.6,True,Operación Comercial,44.54,2021-12-17
+PLANT_399,Eólica Onshore,AES,120.9,363.02,52.2,False,En Construcción,24.71,2021-06-06
+PLANT_400,Solar Fotovoltaica,EPM,132.07,154.48,33.2,True,En Planeación,36.69,2020-06-04
+PLANT_401,Pequeña Hidroeléctrica (PCH),Enel,137.77,276.76,74.5,True,En Construcción,16.51,2024-04-26
+PLANT_402,Biomasa,EPM,24.52,1198.3,88.5,True,Operación Comercial,17.77,2021-07-18
+PLANT_403,Pequeña Hidroeléctrica (PCH),EPM,187.74,1019.54,48.9,True,En Planeación,10.53,2023-10-26
+PLANT_404,Eólica Onshore,Empresa Privada Local,36.65,824.92,42.4,True,Operación Comercial,28.54,2022-11-14
+PLANT_405,Biomasa,Celsia,124.74,717.88,91.9,True,En Construcción,16.41,2024-05-26
+PLANT_406,Pequeña Hidroeléctrica (PCH),Empresa Privada Local,44.92,1384.43,50.6,True,Pruebas,5.13,2021-05-30
+PLANT_407,Eólica Onshore,Enel,61.79,118.38,54.1,True,En Construcción,34.57,2023-11-20
+PLANT_408,Eólica Onshore,EPM,109.52,428.1,43.1,True,En Construcción,35.68,2023-12-09
+PLANT_409,Solar Fotovoltaica,Isagen,83.73,531.41,87.8,True,En Construcción,18.64,2020-01-06
+PLANT_410,Solar Fotovoltaica,EPM,32.47,1175.81,60.5,True,Mantenimiento,4.76,2020-01-21
+PLANT_411,Solar Fotovoltaica,Isagen,34.6,1488.85,76.0,True,Operación Comercial,21.89,2023-01-07
+PLANT_412,Eólica Onshore,Empresa Privada Local,83.92,368.6,79.9,True,Operación Comercial,22.67,2020-10-20
+PLANT_413,Pequeña Hidroeléctrica (PCH),Empresa Privada Local,151.58,1312.72,42.3,True,Operación Comercial,33.76,2024-11-23
+PLANT_414,Solar Fotovoltaica,Celsia,179.64,1247.63,49.7,True,Mantenimiento,16.46,2021-10-16
+PLANT_415,Pequeña Hidroeléctrica (PCH),EPM,17.28,344.74,82.9,True,Pruebas,34.45,2021-02-17
+PLANT_416,Solar Fotovoltaica,AES,78.92,605.01,44.1,False,En Construcción,43.7,2022-10-15
+PLANT_417,Biomasa,Empresa Privada Local,20.5,620.41,78.5,True,Pruebas,12.64,2020-12-28
+PLANT_418,Biomasa,Empresa Privada Local,3.81,1467.55,90.3,True,Mantenimiento,48.97,2021-05-15
+PLANT_419,Solar Fotovoltaica,Celsia,132.51,279.53,64.9,True,Operación Comercial,19.93,2021-07-13
+PLANT_420,Eólica Onshore,Isagen,120.69,1200.75,74.3,True,En Construcción,14.1,2022-11-06
+PLANT_421,Solar Fotovoltaica,Celsia,33.02,507.95,79.4,True,En Planeación,21.65,2022-04-29
+PLANT_422,Solar Fotovoltaica,EPM,47.15,1099.0,82.6,True,En Planeación,5.63,2020-02-02
+PLANT_423,Eólica Onshore,Enel,5.23,635.82,46.6,True,Pruebas,7.16,2021-10-18
+PLANT_424,Biomasa,Enel,167.07,871.76,19.1,True,Operación Comercial,21.31,2024-03-09
+PLANT_425,Pequeña Hidroeléctrica (PCH),Isagen,194.95,1250.59,47.2,True,En Planeación,38.36,2020-11-17
+PLANT_426,Solar Fotovoltaica,Empresa Privada Local,27.52,1208.21,68.9,True,Pruebas,45.12,2022-10-20
+PLANT_427,Eólica Onshore,Isagen,46.68,1300.97,51.0,True,Mantenimiento,33.58,2023-09-10
+PLANT_428,Solar Fotovoltaica,Empresa Privada Local,173.75,98.83,74.9,True,Pruebas,6.16,2024-09-18
+PLANT_429,Eólica Onshore,Empresa Privada Local,185.33,1041.16,43.6,True,Pruebas,33.93,2021-12-23
+PLANT_430,Pequeña Hidroeléctrica (PCH),Enel,84.22,218.58,65.8,True,Pruebas,32.14,2020-01-15
+PLANT_431,Pequeña Hidroeléctrica (PCH),Isagen,10.6,629.57,29.9,False,En Construcción,40.48,2022-05-21
+PLANT_432,Biomasa,Celsia,8.36,827.4,74.9,False,Pruebas,41.44,2022-08-29
+PLANT_433,Eólica Onshore,Empresa Privada Local,115.0,610.08,58.7,True,Pruebas,43.54,2023-07-09
+PLANT_434,Eólica Onshore,AES,78.88,784.22,31.3,True,En Construcción,21.29,2023-07-14
+PLANT_435,Biomasa,AES,6.22,1494.82,38.4,True,En Construcción,35.2,2022-11-21
+PLANT_436,Biomasa,Celsia,116.86,211.47,74.9,True,Mantenimiento,14.14,2021-01-26
+PLANT_437,Eólica Onshore,AES,2.75,1016.43,53.6,True,Operación Comercial,49.97,2020-11-28
+PLANT_438,Biomasa,EPM,157.58,600.04,32.3,True,En Planeación,9.59,2022-05-29
+PLANT_439,Pequeña Hidroeléctrica (PCH),Empresa Privada Local,61.63,208.18,92.4,True,En Planeación,1.5,2023-06-15
+PLANT_440,Solar Fotovoltaica,Celsia,8.53,246.52,72.2,True,Pruebas,8.29,2021-10-17
+PLANT_441,Pequeña Hidroeléctrica (PCH),Isagen,117.88,1424.42,91.6,True,Mantenimiento,39.02,2020-07-07
+PLANT_442,Biomasa,Empresa Privada Local,79.84,1320.61,49.2,True,Pruebas,22.89,2023-03-31
+PLANT_443,Eólica Onshore,Celsia,194.77,1361.49,53.0,True,En Planeación,22.93,2022-12-17
+PLANT_444,Eólica Onshore,Enel,109.07,1487.38,86.8,True,En Construcción,47.8,2024-01-17
+PLANT_445,Pequeña Hidroeléctrica (PCH),Isagen,55.41,320.39,57.0,True,Operación Comercial,46.06,2024-06-01
+PLANT_446,Eólica Onshore,Enel,142.03,539.6,71.6,True,Mantenimiento,16.25,2022-08-01
+PLANT_447,Biomasa,Empresa Privada Local,54.66,1007.14,35.2,True,En Construcción,11.24,2024-03-12
+PLANT_448,Pequeña Hidroeléctrica (PCH),Isagen,180.9,730.87,50.7,True,Operación Comercial,42.58,2020-08-04
+PLANT_449,Eólica Onshore,AES,75.26,633.4,24.9,True,Mantenimiento,45.39,2024-09-05
+PLANT_450,Solar Fotovoltaica,Celsia,110.2,543.14,31.5,True,Mantenimiento,27.54,2020-09-17
+PLANT_451,Solar Fotovoltaica,Empresa Privada Local,10.59,894.73,15.1,True,En Planeación,31.84,2024-04-09
+PLANT_452,Biomasa,EPM,85.51,867.63,18.1,True,En Construcción,13.59,2022-12-07
+PLANT_453,Eólica Onshore,Isagen,166.56,250.57,93.2,True,Mantenimiento,40.24,2023-06-09
+PLANT_454,Biomasa,Isagen,161.23,712.89,34.4,True,Mantenimiento,31.97,2020-01-22
+PLANT_455,Pequeña Hidroeléctrica (PCH),Empresa Privada Local,45.25,834.67,68.1,True,Operación Comercial,25.67,2021-03-16
+PLANT_456,Solar Fotovoltaica,Empresa Privada Local,45.6,859.73,82.1,True,En Planeación,3.95,2020-02-02
+PLANT_457,Pequeña Hidroeléctrica (PCH),Enel,163.55,323.06,59.1,True,Pruebas,45.88,2020-03-19
+PLANT_458,Eólica Onshore,AES,186.11,1115.98,27.3,False,En Planeación,31.16,2020-01-08
+PLANT_459,Biomasa,Enel,19.52,47.55,73.2,True,Pruebas,10.44,2021-05-19
+PLANT_460,Biomasa,Enel,90.29,538.7,63.0,True,En Construcción,30.71,2022-04-09
+PLANT_461,Biomasa,AES,67.82,1172.52,73.5,True,En Construcción,34.2,2020-12-07
+PLANT_462,Pequeña Hidroeléctrica (PCH),EPM,174.2,850.2,76.6,False,Mantenimiento,26.76,2021-11-13
+PLANT_463,Solar Fotovoltaica,Enel,17.16,399.13,93.0,True,En Construcción,36.19,2021-10-29
+PLANT_464,Pequeña Hidroeléctrica (PCH),Enel,42.62,1045.48,60.9,True,Mantenimiento,29.49,2023-06-22
+PLANT_465,Pequeña Hidroeléctrica (PCH),Isagen,150.62,855.41,42.3,True,En Planeación,47.44,2023-07-10
+PLANT_466,Eólica Onshore,AES,10.73,1196.4,66.9,True,En Construcción,3.63,2023-08-21
+PLANT_467,Eólica Onshore,Celsia,98.76,1105.19,20.5,True,En Planeación,6.21,2022-01-25
+PLANT_468,Eólica Onshore,EPM,88.7,919.06,86.8,True,En Planeación,9.51,2020-04-08
+PLANT_469,Solar Fotovoltaica,EPM,67.21,737.38,24.6,True,En Construcción,34.82,2021-09-03
+PLANT_470,Solar Fotovoltaica,AES,79.22,208.44,41.2,True,En Planeación,32.63,2020-10-08
+PLANT_471,Eólica Onshore,Empresa Privada Local,106.22,399.39,80.3,True,En Construcción,44.71,2023-02-26
+PLANT_472,Eólica Onshore,Empresa Privada Local,32.69,634.46,62.8,True,En Construcción,36.91,2024-06-02
+PLANT_473,Solar Fotovoltaica,Isagen,114.61,902.96,46.5,True,En Construcción,25.91,2020-10-30
+PLANT_474,Biomasa,Isagen,161.18,775.42,52.9,True,Pruebas,49.6,2020-06-20
+PLANT_475,Solar Fotovoltaica,AES,152.15,439.39,83.4,True,En Planeación,14.04,2023-02-21
+PLANT_476,Solar Fotovoltaica,Isagen,31.2,19.63,42.2,True,Operación Comercial,41.83,2022-12-10
+PLANT_477,Solar Fotovoltaica,EPM,30.28,749.4,84.6,True,En Construcción,21.91,2021-11-02
+PLANT_478,Eólica Onshore,EPM,54.0,435.58,22.1,True,En Planeación,32.79,2024-09-16
+PLANT_479,Biomasa,Celsia,72.53,1104.57,77.1,True,Mantenimiento,36.64,2020-05-09
+PLANT_480,Solar Fotovoltaica,Empresa Privada Local,81.99,45.68,82.8,True,En Construcción,32.05,2021-03-17
+PLANT_481,Eólica Onshore,AES,136.1,881.39,29.5,True,En Construcción,7.88,2022-02-27
+PLANT_482,Pequeña Hidroeléctrica (PCH),Enel,11.81,1412.8,49.4,True,Operación Comercial,22.7,2021-09-04
+PLANT_483,Pequeña Hidroeléctrica (PCH),Empresa Privada Local,7.42,269.87,28.2,True,Pruebas,28.51,2021-12-10
+PLANT_484,Solar Fotovoltaica,Enel,78.69,712.76,71.5,False,Pruebas,42.6,2022-01-20
+PLANT_485,Pequeña Hidroeléctrica (PCH),Celsia,139.58,146.22,57.8,True,En Construcción,22.74,2023-04-06
+PLANT_486,Biomasa,Celsia,39.09,942.27,65.8,True,En Planeación,46.02,2020-04-20
+PLANT_487,Pequeña Hidroeléctrica (PCH),Isagen,128.48,830.29,30.7,True,Mantenimiento,22.58,2021-10-09
+PLANT_488,Pequeña Hidroeléctrica (PCH),Celsia,52.34,616.97,31.9,True,Mantenimiento,27.89,2022-03-13
+PLANT_489,Biomasa,Celsia,177.27,786.85,18.3,True,En Planeación,40.02,2023-03-07
+PLANT_490,Solar Fotovoltaica,Enel,179.19,1345.9,40.8,True,En Construcción,29.57,2023-10-17
+PLANT_491,Solar Fotovoltaica,Isagen,59.81,302.48,59.8,True,Mantenimiento,48.05,2022-05-14
+PLANT_492,Biomasa,Celsia,46.38,43.62,83.6,True,Pruebas,33.36,2024-01-31
+PLANT_493,Biomasa,Empresa Privada Local,82.56,1293.88,68.4,True,En Planeación,26.61,2021-02-06
+PLANT_494,Biomasa,Celsia,48.49,869.9,49.8,True,Operación Comercial,2.16,2021-10-08
+PLANT_495,Pequeña Hidroeléctrica (PCH),Isagen,134.64,1337.08,91.2,True,En Construcción,21.27,2020-10-07
+PLANT_496,Biomasa,AES,165.3,899.45,72.5,True,En Planeación,15.66,2022-07-09
+PLANT_497,Eólica Onshore,Isagen,134.78,1217.14,89.4,True,Mantenimiento,37.66,2021-07-02
+PLANT_498,Pequeña Hidroeléctrica (PCH),Enel,164.96,650.21,57.2,True,En Construcción,11.21,2020-02-18
+PLANT_499,Solar Fotovoltaica,AES,79.7,1127.29,35.7,True,Pruebas,11.06,2024-10-12
