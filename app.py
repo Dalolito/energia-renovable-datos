@@ -40,14 +40,21 @@ api_key = obtener_api_key()
 
 with st.sidebar:
     st.header("⚙️ Configuración")
-    if not api_key:
-        api_key = st.text_input("Groq API Key", type="password")
-        st.caption(
-            "No se encontró GROQ_API_KEY en variables de entorno ni en secrets. "
-            "Puedes pegarla aquí solo para pruebas locales."
-        )
+
+    api_key_manual = st.text_input(
+        "🔑 Groq API Key",
+        value=api_key if api_key else "",
+        type="password",
+        placeholder="gsk_...",
+        help="Pega aquí tu API Key de Groq. También puedes configurarla como variable de entorno o en st.secrets.",
+    )
+    if api_key_manual:
+        api_key = api_key_manual
+
+    if api_key:
+        st.success("API Key cargada ✅")
     else:
-        st.success("API Key cargada correctamente ✅")
+        st.warning("Falta la API Key para poder chatear.")
 
     st.divider()
     temperatura = st.slider("Creatividad (temperature)", 0.0, 1.0, 0.5, 0.1)
