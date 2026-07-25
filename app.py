@@ -1,293 +1,135 @@
 import os
 
-import pandas as pd
-import plotly.express as px
 import streamlit as st
+from groq import Groq
 
 # ------------------------------------------------------------------
 # Configuración general de la página
 # ------------------------------------------------------------------
 st.set_page_config(
-    page_title="Dashboard Energía Renovable",
-    page_icon="⚡",
-    layout="wide",
+    page_title="Bot de Cultura General e Historia Mundial",
+    page_icon="🏛️",
+    layout="centered",
 )
 
-CSV_PATH = "energia_renovable.csv"
+MODELO = "llama-3.3-70b-versatile"
+
+SYSTEM_PROMPT = (
+    "Eres un asistente experto en cultura general e historia mundial. "
+    "Respondes de forma clara, precisa y educativa. Cuando sea relevante, "
+    "das contexto histórico (fechas, lugares, personajes clave) y "
+    "aclaras si un dato es incierto o debatido entre historiadores. "
+    "Si te preguntan algo fuera de cultura general o historia, respondes "
+    "brevemente y sugieres reformular hacia esos temas."
+)
 
 # ------------------------------------------------------------------
-# Carga de datos
+# Obtener API key: variable de entorno / st.secrets (recomendado)
 # ------------------------------------------------------------------
-@st.cache_data
-def procesar_datos(df):
-    df["Fecha_Entrada_Operacion"] = pd.to_datetime(
-        df["Fecha_Entrada_Operacion"], errors="coerce"
-    )
-    df["MUSD_por_MWh_dia"] = df["Inversion_Inicial_MUSD"] / df["Generacion_Diaria_MWh"]
-    df["Año_Entrada"] = df["Fecha_Entrada_Operacion"].dt.year
-    return df
+def obtener_api_key():
+    api_key = os.environ.get("GROQ_API_KEY")
+    if not api_key:
+        try:
+            api_key = st.secrets["GROQ_API_KEY"]
+        except Exception:
+            api_key = None
+    return api_key
 
-if os.path.exists(CSV_PATH):
-    df = procesar_datos(pd.read_csv(CSV_PATH))
-else:
-    st.warning(
-        f"No se encontró **{CSV_PATH}** en el repositorio. "
-        "Súbelo aquí para continuar (o agrégalo al repo de GitHub junto a app.py)."
-    )
-    archivo_subido = st.file_uploader("Sube el archivo CSV", type=["csv"])
-    if archivo_subido is None:
-        st.stop()
-    df = procesar_datos(pd.read_csv(archivo_subido))
 
-# ------------------------------------------------------------------
-# Sidebar - Filtros
-# ------------------------------------------------------------------
-st.sidebar.header("Filtros")
+api_key = obtener_api_key()
 
-tecnologias = sorted(df["Tecnologia"].unique())
-tecnologias_sel = st.sidebar.multiselect(
-    "Tecnología", tecnologias, default=tecnologias
-)
+with st.sidebar:
+    st.header("⚙️ Configuración")
+    if not api_key:
+        api_key = st.text_input("Groq API Key", type="password")
+        st.caption(
+            "No se encontró GROQ_API_KEY en variables de entorno ni en secrets. "
+            "Puedes pegarla aquí solo para pruebas locales."
+        )
+    else:
+        st.success("API Key cargada correctamente ✅")
 
-operadores = sorted(df["Operador"].unique())
-operadores_sel = st.sidebar.multiselect(
-    "Operador", operadores, default=operadores
-)
+    st.divider()
+    temperatura = st.slider("Creatividad (temperature)", 0.0, 1.0, 0.5, 0.1)
+    max_tokens = st.slider("Longitud máxima de respuesta (tokens)", 256, 2048, 1024, 128)
 
-estados = sorted(df["Estado_Actual"].unique())
-estados_sel = st.sidebar.multiselect(
-    "Estado Actual", estados, default=estados
-)
+    st.divider()
+    if st.button("🗑️ Limpiar conversación"):
+        st.session_state.mensajes = [{"role": "system", "content": SYSTEM_PROMPT}]
+        st.rerun()
 
-conectado_sel = st.sidebar.multiselect(
-    "Conectado al SIN",
-    options=df["Conectado_SIN"].unique().tolist(),
-    default=df["Conectado_SIN"].unique().tolist(),
-)
-
-df_filtrado = df[
-    df["Tecnologia"].isin(tecnologias_sel)
-    & df["Operador"].isin(operadores_sel)
-    & df["Estado_Actual"].isin(estados_sel)
-    & df["Conectado_SIN"].isin(conectado_sel)
-]
-
-if df_filtrado.empty:
-    st.warning("No hay datos con los filtros seleccionados.")
+if not api_key:
+    st.warning("Ingresa tu API Key de Groq en la barra lateral para comenzar.")
     st.stop()
+
+client = Groq(api_key=api_key)
+
+# ------------------------------------------------------------------
+# Estado de la conversación
+# ------------------------------------------------------------------
+if "mensajes" not in st.session_state:
+    st.session_state.mensajes = [{"role": "system", "content": SYSTEM_PROMPT}]
 
 # ------------------------------------------------------------------
 # Encabezado
 # ------------------------------------------------------------------
-st.title("⚡ Dashboard de Energía Renovable")
-st.markdown("Panel interactivo de proyectos **Solares, Eólicos y PCH** conectados al SIN.")
+st.title("🏛️ Bot de Cultura General e Historia Mundial")
+st.caption(f"Powered by Groq · Modelo: {MODELO}")
 
 # ------------------------------------------------------------------
-# KPIs principales
+# Mostrar historial (sin el mensaje "system")
 # ------------------------------------------------------------------
-col1, col2, col3, col4 = st.columns(4)
-
-col1.metric("Total Generación (MWh/día)", f"{df_filtrado['Generacion_Diaria_MWh'].sum():,.0f}")
-col2.metric("Capacidad Instalada Total (MW)", f"{df_filtrado['Capacidad_Instalada_MW'].sum():,.0f}")
-col3.metric("Inversión Total (MUSD)", f"{df_filtrado['Inversion_Inicial_MUSD'].sum():,.1f}")
-col4.metric("Proyectos", f"{df_filtrado['ID_Proyecto'].nunique():,}")
-
-st.divider()
+for mensaje in st.session_state.mensajes:
+    if mensaje["role"] == "system":
+        continue
+    with st.chat_message(mensaje["role"]):
+        st.markdown(mensaje["content"])
 
 # ------------------------------------------------------------------
-# Pregunta de negocio: ¿Qué tecnología tiene la mejor relación
-# Inversión vs. Generación Diaria?
+# Input del usuario
 # ------------------------------------------------------------------
-st.subheader("💰 Inversión vs. Generación Diaria por Tecnología")
+pregunta = st.chat_input("Pregúntame sobre historia mundial o cultura general...")
 
-# Resumen agregado por tecnología (base de ambos gráficos)
-resumen_eficiencia = (
-    df_filtrado.groupby("Tecnologia")
-    .agg(
-        Inversion_Total_MUSD=("Inversion_Inicial_MUSD", "sum"),
-        Generacion_Total_MWh=("Generacion_Diaria_MWh", "sum"),
-        Inversion_Promedio_MUSD=("Inversion_Inicial_MUSD", "mean"),
-        Generacion_Promedio_MWh=("Generacion_Diaria_MWh", "mean"),
-        Proyectos=("ID_Proyecto", "count"),
-    )
-    .reset_index()
-)
-resumen_eficiencia["MUSD_por_MWh_dia"] = (
-    resumen_eficiencia["Inversion_Total_MUSD"] / resumen_eficiencia["Generacion_Total_MWh"]
-)
-resumen_eficiencia = resumen_eficiencia.sort_values("MUSD_por_MWh_dia", ascending=True)
-mejor_tec = resumen_eficiencia.iloc[0]["Tecnologia"]
+if pregunta:
+    st.session_state.mensajes.append({"role": "user", "content": pregunta})
+    with st.chat_message("user"):
+        st.markdown(pregunta)
 
-col_izq, col_der = st.columns(2)
+    with st.chat_message("assistant"):
+        placeholder = st.empty()
+        respuesta_completa = ""
+        try:
+            stream = client.chat.completions.create(
+                model=MODELO,
+                messages=st.session_state.mensajes,
+                temperature=temperatura,
+                max_tokens=max_tokens,
+                stream=True,
+            )
+            for chunk in stream:
+                delta = chunk.choices[0].delta.content or ""
+                respuesta_completa += delta
+                placeholder.markdown(respuesta_completa + "▌")
+            placeholder.markdown(respuesta_completa)
+        except Exception as e:
+            respuesta_completa = f"⚠️ Ocurrió un error al llamar a la API de Groq: {e}"
+            placeholder.markdown(respuesta_completa)
 
-with col_izq:
-    # Barra horizontal: responde el ranking directo (menor = mejor)
-    resumen_eficiencia["Destacado"] = resumen_eficiencia["Tecnologia"].apply(
-        lambda t: "Mejor opción" if t == mejor_tec else "Otras"
-    )
-    fig_ranking = px.bar(
-        resumen_eficiencia.sort_values("MUSD_por_MWh_dia", ascending=True),
-        x="MUSD_por_MWh_dia",
-        y="Tecnologia",
-        orientation="h",
-        color="Destacado",
-        color_discrete_map={"Mejor opción": "#2ecc71", "Otras": "#bdc3c7"},
-        text_auto=".3f",
-        title="Ranking: Inversión requerida por cada MWh diario (menor = mejor)",
-        labels={"MUSD_por_MWh_dia": "MUSD por MWh diario", "Tecnologia": ""},
-    )
-    fig_ranking.update_layout(showlegend=False, yaxis={"categoryorder": "total descending"})
-    st.plotly_chart(fig_ranking, use_container_width=True)
-
-with col_der:
-    # Frontera de eficiencia: promedio de inversión vs. generación por tecnología
-    fig_frontera = px.scatter(
-        resumen_eficiencia,
-        x="Inversion_Promedio_MUSD",
-        y="Generacion_Promedio_MWh",
-        color="Tecnologia",
-        text="Tecnologia",
-        size="Proyectos",
-        size_max=40,
-        title="Promedio por Tecnología: menos Inversión y más Generación = mejor",
-        labels={
-            "Inversion_Promedio_MUSD": "Inversión Promedio (MUSD)",
-            "Generacion_Promedio_MWh": "Generación Promedio Diaria (MWh)",
-        },
-    )
-    fig_frontera.update_traces(textposition="top center")
-    fig_frontera.add_annotation(
-        text="⭐ Zona ideal: arriba-izquierda",
-        xref="paper", yref="paper", x=0.02, y=0.98,
-        showarrow=False, font=dict(size=11, color="gray"),
-    )
-    fig_frontera.update_layout(showlegend=False)
-    st.plotly_chart(fig_frontera, use_container_width=True)
-
-st.success(
-    f"✅ **{mejor_tec}** tiene la mejor relación Inversión / Generación Diaria: requiere "
-    f"solo **{resumen_eficiencia.iloc[0]['MUSD_por_MWh_dia']:.3f} MUSD** por cada MWh generado al día "
-    f"(el valor más bajo entre las tecnologías comparadas)."
-)
-
-st.divider()
+    st.session_state.mensajes.append({"role": "assistant", "content": respuesta_completa})
 
 # ------------------------------------------------------------------
-# Visualización clave: Capacidad Instalada por Operador
+# Sugerencias rápidas
 # ------------------------------------------------------------------
-st.subheader("🏗️ Capacidad Instalada por Operador")
-
-capacidad_operador = (
-    df_filtrado.groupby("Operador")["Capacidad_Instalada_MW"]
-    .sum()
-    .reset_index()
-    .sort_values("Capacidad_Instalada_MW", ascending=True)
-)
-
-fig_operador = px.bar(
-    capacidad_operador,
-    x="Capacidad_Instalada_MW",
-    y="Operador",
-    orientation="h",
-    color="Capacidad_Instalada_MW",
-    color_continuous_scale="Greens",
-    text_auto=".0f",
-    title="Capacidad Instalada Total por Operador (MW)",
-    labels={"Capacidad_Instalada_MW": "Capacidad Instalada (MW)", "Operador": ""},
-)
-fig_operador.update_layout(showlegend=False, coloraxis_showscale=False)
-st.plotly_chart(fig_operador, use_container_width=True)
-
-st.divider()
-
-# ------------------------------------------------------------------
-# Información general adicional
-# ------------------------------------------------------------------
-st.subheader("📊 Contexto General")
-
-tab1, tab2, tab3, tab4 = st.tabs(
-    ["Distribución por Tecnología", "Estado de Proyectos", "Evolución Temporal", "Eficiencia de Planta"]
-)
-
-with tab1:
-    col_a, col_b = st.columns(2)
-    with col_a:
-        fig_pie_tec = px.pie(
-            df_filtrado,
-            names="Tecnologia",
-            values="Capacidad_Instalada_MW",
-            title="Participación de Capacidad Instalada por Tecnología",
-            hole=0.4,
-        )
-        st.plotly_chart(fig_pie_tec, use_container_width=True)
-    with col_b:
-        fig_count_tec = px.bar(
-            df_filtrado["Tecnologia"].value_counts().reset_index(),
-            x="Tecnologia",
-            y="count",
-            color="Tecnologia",
-            title="Número de Proyectos por Tecnología",
-            labels={"count": "Cantidad de Proyectos"},
-        )
-        fig_count_tec.update_layout(showlegend=False)
-        st.plotly_chart(fig_count_tec, use_container_width=True)
-
-with tab2:
-    col_c, col_d = st.columns(2)
-    with col_c:
-        fig_estado = px.pie(
-            df_filtrado,
-            names="Estado_Actual",
-            title="Distribución de Proyectos por Estado Actual",
-            hole=0.4,
-        )
-        st.plotly_chart(fig_estado, use_container_width=True)
-    with col_d:
-        fig_estado_tec = px.bar(
-            df_filtrado.groupby(["Estado_Actual", "Tecnologia"]).size().reset_index(name="Cantidad"),
-            x="Estado_Actual",
-            y="Cantidad",
-            color="Tecnologia",
-            barmode="group",
-            title="Estado Actual por Tecnología",
-        )
-        st.plotly_chart(fig_estado_tec, use_container_width=True)
-
-with tab3:
-    evolucion = (
-        df_filtrado.dropna(subset=["Año_Entrada"])
-        .groupby(["Año_Entrada", "Tecnologia"])["Capacidad_Instalada_MW"]
-        .sum()
-        .reset_index()
-    )
-    fig_evolucion = px.bar(
-        evolucion,
-        x="Año_Entrada",
-        y="Capacidad_Instalada_MW",
-        color="Tecnologia",
-        title="Capacidad Instalada Nueva por Año de Entrada en Operación",
-        labels={"Capacidad_Instalada_MW": "Capacidad Instalada (MW)", "Año_Entrada": "Año"},
-    )
-    st.plotly_chart(fig_evolucion, use_container_width=True)
-
-with tab4:
-    fig_box_ef = px.box(
-        df_filtrado,
-        x="Tecnologia",
-        y="Eficiencia_Planta_Pct",
-        color="Tecnologia",
-        title="Distribución de Eficiencia de Planta (%) por Tecnología",
-        points="all",
-    )
-    fig_box_ef.update_layout(showlegend=False)
-    st.plotly_chart(fig_box_ef, use_container_width=True)
-
-st.divider()
-
-# ------------------------------------------------------------------
-# Tabla de datos filtrados
-# ------------------------------------------------------------------
-st.subheader("📋 Datos Detallados")
-st.dataframe(df_filtrado, use_container_width=True)
-
-st.caption(f"Mostrando {len(df_filtrado):,} de {len(df):,} proyectos totales.")
+if len(st.session_state.mensajes) == 1:
+    st.markdown("**Prueba preguntando:**")
+    ejemplos = [
+        "¿Cuáles fueron las causas de la Primera Guerra Mundial?",
+        "¿Quién fue Cleopatra y por qué es tan famosa?",
+        "Explícame la caída del Imperio Romano",
+        "¿Qué fue la Guerra Fría?",
+    ]
+    cols = st.columns(2)
+    for i, ejemplo in enumerate(ejemplos):
+        if cols[i % 2].button(ejemplo):
+            st.session_state.mensajes.append({"role": "user", "content": ejemplo})
+            st.rerun()
